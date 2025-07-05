@@ -1,0 +1,28 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 24px;
+    background: linear-gradient(45deg, rgb(103, 164, 29), rgb(155, 236, 112), rgb(61, 237, 114), rgb(89, 169, 46), rgb(214, 193, 38))
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header div img {
+    width: 100%;
+    height: auto;
+}
+
+header div h1 {
+    color: white;
+}
