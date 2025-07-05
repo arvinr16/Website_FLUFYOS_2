@@ -1,2 +1,3 @@
 # Website_FLUFYOS_2
-Ini adalah project latihan pembuatan Website Perusahaan
+## Penjelasan:
+Ini adalah project saya mengenai latihan pembuatan Website Perusahaan
