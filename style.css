@@ -8,8 +8,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 24px;
-    background: linear-gradient(45deg, rgb(103, 164, 29), rgb(155, 236, 112), rgb(61, 237, 114), rgb(89, 169, 46), rgb(214, 193, 38))
+    padding: 16px 24px;
+    background: linear-gradient(45deg, #67c569, #70de72, #4cb28b, #59ca8a)
 }
 
 header div {
@@ -21,8 +21,51 @@ header div {
 header div img {
     width: 100%;
     height: auto;
+    padding: 10px;
+    padding-bottom: 12px;
 }
 
 header div h1 {
     color: white;
+}
+
+.div-logo {
+    position: relative;
+    display: inline-block;
+}
+
+.squareLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 1.5px;
+    background-color: white;
+}
+
+.squareRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 1.5px;
+    background-color: white;
+}
+
+.squareTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5px;
+    width: 69px;
+    background-color: white;
+}
+
+.squareBottom {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    height: 1.5px;
+    width: 70px;
+    background-color: white;
 }
