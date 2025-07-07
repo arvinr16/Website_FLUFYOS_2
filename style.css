@@ -27,8 +27,10 @@ header div img {
 
 header div h1 {
     color: white;
+    cursor: default;
 }
 
+/* Icon Company Square Effect Start*/
 .div-logo {
     position: relative;
     display: inline-block;
@@ -68,4 +70,62 @@ header div h1 {
     height: 1.5px;
     width: 70px;
     background-color: white;
+}
+/* Icon Company Square Effect End*/
+
+header div a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 64px 103.55px;
+}
+
+p {
+    color: #676767;
+}
+
+.div-landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-landing img {
+    width: 100%;
+    height: auto;
+}
+
+.div-landing h3 {
+    font-size: 28px;
+}
+
+.div-landing h1 {
+    font-size: 48px;
+}
+
+/* .div-landing div h3:nth-of-type(2) { mengambil h3 kedua
+    margin-bottom: 16px;
+} */
+
+.div-landing p {
+    font-size: 18px;
+    margin: 16px 0 16px 0;
+}
+
+.pipe {
+    display: inline-block;
+    background-color: black;
+    height: 200px;
+    width: 1.5px;
+}
+
+.btn-main {
+    background: linear-gradient(45deg, #70de72, #67c569);
+}
+
+.btn-second {
+    background: #FFFFFF;
 }
