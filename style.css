@@ -122,10 +122,91 @@ p {
     width: 1.5px;
 }
 
+.btn-landing {
+    display: flex;
+    align-items: center;
+}
+
 .btn-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 7px 8px;
+    color: white;
     background: linear-gradient(45deg, #70de72, #67c569);
+    border: 2px solid #5bb45c;
+    border-radius: 30px;
+    cursor: pointer;
+    background-clip: border-box;
+    -webkit-text-fill-color: white;
+    transition: background 0.5s ease,
+                border 0.5s ease,
+                color 0.5s ease,
+                -webkit-text-fill-color 0.5s ease,
+                box-shadow 0.3s ease;
+}
+
+.btn-main:hover {
+    background: linear-gradient(45deg, #70de72, #67c569);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #83ff85;
+    box-shadow: 0 5px 24px #70de72;
 }
 
 .btn-second {
-    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 8px;
+    color: #848484;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #5bb45c;
+    border-radius: 30px;
+    transition: background 0.5s ease,
+                border 0.5s ease,
+                color 0.5s ease,
+                -webkit-text-fill-color 0.5s ease,
+                box-shadow 0.3s ease;
+}
+
+.btn-second:hover {
+    background: linear-gradient(45deg, #70de72, #67c569);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid #83ff85;
+    box-shadow: 0 5px 24px #70de72;
+}
+
+.btn-header {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 4px 8px;
+    background: white;
+    cursor: pointer;
+    border: 2px solid #86ff88;
+    border-radius: 30px;
+    transition: all 0.5s ease;
+}
+
+
+.btn-header:hover {
+    border: 2px solid #83ff85;
+    box-shadow: 0 5px 24px #a1ffa2;
+}
+
+.btn-header-text {
+    background: none;
+    color: #989898;
+    transition: all 0.5s ease;
+}
+
+.btn-header-text:hover {
+    background-image: linear-gradient(45deg, #82ff84, #4fff52);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
