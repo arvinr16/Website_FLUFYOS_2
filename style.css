@@ -26,6 +26,7 @@ header div img {
 }
 
 header div h1 {
+    font-size: 32px;
     color: white;
     cursor: default;
 }
@@ -81,6 +82,23 @@ header div a {
 
 section {
     padding: 64px 103.55px;
+    padding-top: 98px;
+    position: relative;
+}
+
+section::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    color: #676767;
+    font-weight: bold;
+    font-size: 58px;
+    opacity: 0.25;
+    top: 10px;
+}
+
+h1 {
+    font-size: 48px;
 }
 
 p {
@@ -122,6 +140,7 @@ p {
     width: 1.5px;
 }
 
+/* Button Styling Start */
 .btn-landing {
     display: flex;
     align-items: center;
@@ -191,7 +210,6 @@ p {
     transition: all 0.5s ease;
 }
 
-
 .btn-header:hover {
     border: 2px solid #83ff85;
     box-shadow: 0 5px 24px #a1ffa2;
@@ -209,4 +227,19 @@ p {
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+/* Button Styling End */
+
+#about {
+    margin-top: 64px;
+}
+
+#about::before {
+    content: 'About Us';
+}
+
+.about-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
