@@ -1,7 +1,8 @@
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    scroll-behavior: smooth
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -230,16 +231,88 @@ p {
 }
 /* Button Styling End */
 
+section#about {
+    display: flex;
+    justify-content: center;
+}
+
+section#about::before {
+    content: 'About Us';
+}
+
 #about {
     margin-top: 64px;
 }
 
-#about::before {
-    content: 'About Us';
+.about-p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 16px 0 16px 0;
 }
 
-.about-div {
+.about-menu {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    padding: 24px 0 0 0;
+}
+
+.about-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.about-item img {
+    height: 260px;
+    object-fit: cover;
+}
+
+.about-item {
+    position: relative;
+    height: 260px;
+}
+
+.about-item:after {
+    content: '';
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.about-item:hover::after {
+    opacity: 1;
+}
+
+#about-1:hover::after {
+    content: 'Web Development';
+}
+
+#about-2:hover::after {
+    content: 'Design Web';
+}
+
+#about-3:hover::after {
+    content: 'Frontend Development';
+}
+
+#about-4:hover::after {
+    content: 'Backend Development';
 }
